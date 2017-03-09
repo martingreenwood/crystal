@@ -1,0 +1,101 @@
+/*==============================
+=            LOADER            =
+==============================*/
+
+#loader {
+	background-image: url(assets/logo.svg);
+	background-repeat: no-repeat;
+	background-size: 200px;
+	background-position: 50%;
+	background-color: white;
+	width: 100vw;
+	height: 100vh;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 99999;
+	transition: all 500ms;
+
+	#loading {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+	}
+
+	#progress{
+		height: 10px;
+		background: $brand-primary;
+		position: absolute;
+		width: 0;                /* will be increased by JS */
+		top: 0;
+	}
+
+	#progstat{
+		font-size: 0.7em;
+		letter-spacing: 3px;
+		position: absolute;
+		top: 0;
+		margin-top: 20px;
+		width: 100%;
+		text-align:center;
+		color: $brand-primary;
+	}
+}
+
+/*=====================================
+=            MASTER HEADER            =
+=====================================*/
+
+#masthead {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 10;
+	height: 133px;
+	transition: all 300ms;
+
+	@include media ($large-screen-up) {
+		height: 181px;
+	}
+
+	.container {
+		position: relative;
+
+		.site-branding {
+			position: absolute;
+			left: initial;
+			top: 30px;
+			width: 93px;
+			transition: all 300ms;
+
+			@include media ($large-screen-up) {
+				width: 160px;
+			}
+		}
+
+		.menu-toggle {
+			top: 51px;
+			transition: all 300ms;
+
+			@include media ($large-screen-up) {
+				top: 75px;
+			}
+		}
+	}
+
+	&.scrolled {
+		background: white;
+		height: 133px;
+
+		.site-branding {
+			width: 93px;
+		}
+		
+		.menu-toggle {
+			top: 51px;
+		}
+	}
+}

@@ -1,0 +1,47 @@
+
+#colophon {
+	background: black;
+
+	p, a {
+		color: white;
+		margin: 0;
+	}
+
+	.site-info {
+		padding-top: 40px;
+		padding-bottom: 40px;
+
+		.logo {
+			text-align: center;
+			margin-bottom: 40px;
+
+			img {
+				filter: invert(100%);
+				width: 160px;
+				display: inline-block;
+			}
+		}
+
+		.contact {
+			margin-bottom: 40px;
+
+			ul {
+				list-style-type: none;
+				margin: 0 0 0 0;
+
+				li {
+					text-align: center;
+					color: white;
+				}
+			}
+		}
+
+		.copyright {
+
+			p {
+				text-align: center;
+			}
+		}
+	}
+}
+
