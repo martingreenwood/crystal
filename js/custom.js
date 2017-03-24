@@ -79,9 +79,9 @@ var $ = jQuery;
 		$('#primary').css('padding-top', windowHeight);
 	}
 
- 	setHeight();
+ 	//setHeight();
   
   $(window).resize(function() {
-    setHeight();
+    //setHeight();
   });
 })(jQuery);

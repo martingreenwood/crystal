@@ -95,7 +95,7 @@ get_header(); ?>
 
 		<?php if (get_field( 'enable_cta' )): ?>
 
-		<section id="cta" class="parallax-window" data-parallax="scroll" data-image-src="<?php the_field( 'cta_background' ); ?>">
+		<section id="cta" class="parallax-window" data-bleed="50" data-parallax="scroll" data-image-src="<?php the_field( 'cta_background' ); ?>">
 			<div class="overlay">
 				<div class="container">
 

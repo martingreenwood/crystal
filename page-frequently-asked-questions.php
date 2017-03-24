@@ -44,20 +44,8 @@ get_header(); ?>
 
 				endwhile;
 
-				the_posts_navigation();
-
-			else :
-
-				get_template_part( 'template-parts/content', 'none' );
-
-			endif; ?>
-
-		</main>
-
-		<section id="faqs">
-			<div class="container">
-
-				<div class="questions">
+				?>
+				<div class="questions container">
 
 					<?php 
 					if( have_rows('questions') ):
@@ -74,14 +62,18 @@ get_header(); ?>
 					?>
 
 				</div>
+				<?php
 
-			</div>
-		</section>
+			else :
+
+				get_template_part( 'template-parts/content', 'none' );
+
+			endif; ?>
+
+		</main>
 
 		<section id="services">
 			<div class="container">
-
-				<h1>THE SERVICES WE PROVIDE</h1>
 
 				<div class="list-of-services">
 

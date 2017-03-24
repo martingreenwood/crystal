@@ -1,9 +1,7 @@
 // SLIDER
 
 #slider {
-	position: fixed;
 	width: 100%;
-	z-index: -9999;
 	visibility: hidden;
 	overflow: hidden;
 	height: 133px;
@@ -109,33 +107,61 @@
 	}
 }
 
+.login {
+	#main {
+		background: #f9f9f9;
+
+		.inner {
+			.entry-header h1 {
+				color: black;
+			}
+			.entry-content {
+				columns: 1;
+				-webkit-columns: 1;
+				-moz-columns: 1;
+
+				p {
+					color: black;
+				}
+				
+				.tml {
+					margin: 0 auto;
+				}
+			}
+		}
+	}
+}
+
 /*============================
 =            FAQs            =
 ============================*/
 
-#faqs {
-	background: #f9f9f9;
-	padding: 60px 0;
-
-	@include media ($medium-screen-up) {
-		padding: 100px 0;
-	}
+#main {
 
 	.questions {
+		margin-top: 49px;
+		padding-top: 49px;
+		border-top: 1px solid #fff;
 		columns: 1;
 		-webkit-columns: 1;
 		-moz-columns: 1;
 
 		@include media ($medium-screen-up) {
-			columns: 3;
-			-webkit-columns: 3;
-			-moz-columns: 3;			
+			columns: 2;
+			-webkit-columns: 2;
+			-moz-columns: 2;			
 		}
 
 		.question {
 			display: inline-block;
 			margin-bottom: 30px;
 			text-align: left;
+			color: white;
+			vertical-align: top;
+
+			p {
+				color: white;
+			}
 		}
 	}
 }
@@ -169,28 +195,23 @@
 	}
 
 	.list-of-services {
-		columns: 2;
-		-webkit-columns: 2;
-		-moz-columns: 2;
-
-		@include media ($medium-screen-up) {
-			columns: 3;
-			-webkit-columns: 3;
-			-moz-columns: 3;			
-		}
-
-		@include media ($large-screen-up) {
-			columns: 6;
-			-webkit-columns: 6;
-			-moz-columns: 6;			
-		}
+		float: left;
+		width: 100%;
 
 		.service {
 			margin-bottom: 30px;
-			white-space: pre-line;
+			position: relative;
+			padding: 0 10px;
+			box-sizing: border-box;
+
+			@include media ($medium-screen-up) {
+				width: 33.333%;
+				float: left;
+			}
 
 			@include media ($large-screen-up) {
 				margin-bottom: 0;
+				width: 16.666%;
 			}
 			
 			.icon {
@@ -214,9 +235,10 @@
 				font-size: 14px;
 				margin: 0 0 20px 0;
 				text-transform: uppercase;
+				min-height: 56px;
 
 				@include media ($medium-screen-up) { 
-					font-size: 18px;
+					font-size: 16px;
 				}
 			}
 

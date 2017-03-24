@@ -21,9 +21,9 @@
 			</div>
 			<div class="contact">
 				<ul class="aligncenter">
-					<li>T: 01234 567 890 F: 01234 567 890 </li>
-					<li>E: HELLO@CRYSTALCLEANING.COM</li>
-					<li>A: 123 ROADNAME HERE, MALVERN, WR1 123</li>
+					<li>T: 07465 659 585 </li>
+					<li>E: <?php echo antispambot( "hello@fineclean.co.uk"); ?></li>
+					<li>A: St. Johns, Worcester</li>
 				</ul>
 			</div>
 			<div class="copyright">

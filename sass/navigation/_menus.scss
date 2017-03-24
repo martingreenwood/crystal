@@ -60,12 +60,12 @@
 
 		li:hover > ul,
 		li.focus > ul {
-			left: 0;
-			bottom: 0;
-			position: relative;
+			position: absolute;
 			padding: 10px 0;
 			margin: 10px 0;
 			background: #111;
+			left: 260px;
+			top: 220px;
 		}
 	}
 	li {
