@@ -115,6 +115,18 @@
 	}
 }
 
+.span3 {
+	@include span-columns(1);
+
+	@include media($medium-screen-up) {
+		@include span-columns(2.66);
+	}
+
+	@include media($large-screen-up) {
+		@include span-columns(3);
+	}
+}
+
 .span6 {
 	@include span-columns(1);
 

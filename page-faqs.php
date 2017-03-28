@@ -9,7 +9,9 @@
 get_header(); ?>
 
 	<div id="slider">
+		<?php if (!get_field( 'Wide_Feature_Image' )): ?>
 		<div class="container">
+		<?php endif; ?>
 			<?php  $slider = get_field('slider'); if( $slider ): ?>
 			<div class="slides">
 			<?php foreach( $slider as $slide ): ?>
@@ -22,8 +24,16 @@ get_header(); ?>
 				</div>
 			<?php endforeach; ?>
 			</div>
+			<?php elseif(has_post_thumbnail()): ?>
+			<div class="slides">
+				<div class="slide">
+					<?php the_post_thumbnail( 'cover' ); ?>
+				</div>
+			</div>
 			<?php endif; ?>
+		<?php if (!get_field( 'Wide_Feature_Image' )): ?>
 		</div>
+		<?php endif; ?>
 	</div>
 
 	<div id="primary" class="content-area">
@@ -72,34 +82,9 @@ get_header(); ?>
 
 		</main>
 
-		<section id="services">
-			<div class="container">
-
-				<div class="list-of-services">
-
-					<?php 
-					$params = array( 
-						'post_type' => 'services', 
-						'posts_per_page' => -1,
-					);
-
-					$loop = new WP_Query($params);  ?>
-
-					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="service">
-
-						<a href="<?php the_permalink(); ?>">
-							<div class="icon" style="background-image:url(<?php the_field( 'service_icon' ); ?>);"></div>
-							<h3><?php the_title( ); ?></h3>
-							<button>Details</button>
-						</a>
-					</div>
-					<?php endwhile; wp_reset_query(); ?>
-
-				</div>
-
-			</div>
-		</section>
+		<?php 
+			get_template_part( 'partials/services', 'boxes' );
+		?>
 
 		<?php if (get_field( 'enable_cta' )): ?>
 

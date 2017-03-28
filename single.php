@@ -65,36 +65,9 @@ get_header(); ?>
 
 		</main>
 
-		<section id="services">
-			<div class="container">
-
-				<h1>THE SERVICES WE PROVIDE</h1>
-
-				<div class="list-of-services">
-
-					<?php 
-					$params = array( 
-						'post_type' => 'services', 
-						'posts_per_page' => -1,
-					);
-
-					$loop = new WP_Query($params);  ?>
-
-					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
-					<div class="service">
-
-						<a href="<?php the_permalink(); ?>">
-							<div class="icon" style="background-image:url(<?php the_field( 'service_icon' ); ?>);"></div>
-							<h3><?php the_title( ); ?></h3>
-							<button>Details</button>
-						</a>
-					</div>
-					<?php endwhile; wp_reset_query(); ?>
-
-				</div>
-
-			</div>
-		</section>
+		<?php 
+			get_template_part( 'partials/services', 'boxes' );
+		?>
 
 	</div>
 

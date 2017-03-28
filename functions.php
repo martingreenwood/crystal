@@ -41,10 +41,12 @@ function crystal_setup() {
 	 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 	 */
 	add_theme_support( 'post-thumbnails' );
+	add_image_size( 'cover', '1600', '600', true );
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'menu-1' => esc_html__( 'Primary', 'crystal' ),
+		'menu-2' => esc_html__( 'Services', 'crystal' ),
 	) );
 
 	/*

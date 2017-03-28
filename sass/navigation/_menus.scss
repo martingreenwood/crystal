@@ -191,6 +191,50 @@
 	}
 }
 
+body:not(.home) {
+	.menu-toggle {
+
+		&:hover, &:focus {
+			color: white;
+		}
+
+		span {
+			background: #fff;
+		}
+	}
+}
+
+body:not(.home) {
+	
+	.scrolled {
+
+		.menu-toggle {
+
+			&:hover, &:focus {
+				color: black;
+			}
+
+			span {
+				background: black;
+			}
+		}
+	}
+
+	.toggled {
+
+		.menu-toggle {
+
+			&:hover, &:focus {
+				color: white;
+			}
+
+			span {
+				background: white;
+			}
+		}
+	}
+}
+
 .main-navigation ul {
 	display: none;
 }

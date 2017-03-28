@@ -67,12 +67,17 @@
 		.site-branding {
 			position: absolute;
 			left: initial;
+			background-image: url(assets/logo-w.svg);
+			background-repeat: no-repeat;
+			background-size: contain;
 			top: 30px;
 			width: 93px;
 			transition: all 300ms;
 
 			@include media ($large-screen-up) {
-				width: 160px;
+				width: 150px;
+				height: 114px;
+
 			}
 		}
 
@@ -91,11 +96,25 @@
 		height: 133px;
 
 		.site-branding {
+			background-image: url(assets/logo.svg);
 			width: 93px;
 		}
 		
 		.menu-toggle {
 			top: 51px;
+		}
+	}
+}
+
+.home {
+	
+	#masthead {
+
+		.container {
+
+			.site-branding {
+				background-image: url(assets/logo.svg);
+			}
 		}
 	}
 }

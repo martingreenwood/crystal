@@ -1,4 +1,6 @@
-// SLIDER
+/*==============================
+=            SLIDER            =
+==============================*/
 
 #slider {
 	width: 100%;
@@ -9,6 +11,8 @@
 	@include media ($medium-screen-up) {
 		visibility: visible;
 		height: auto;
+		max-height: 600px;
+		overflow: hidden
 	}
 
 	.slide {
@@ -16,6 +20,7 @@
 
 		img {
 			display: block;
+			width: 100%;
 		}
 	}
 
@@ -50,11 +55,30 @@
 	}
 }
 
+body:not(.home) {
 
-// Home
+	#slider {
+
+		.slide {
+
+			img {
+				-webkit-filter: grayscale(100%);
+				-moz-filter: grayscale(100%);
+				-o-filter: grayscale(100%);
+				-ms-filter: grayscale(100%);
+				filter: grayscale(100%);
+			}
+		}
+	}
+}
+
+
+/*============================
+=            HOME            =
+============================*/
 
 #main {
-	background: black;
+	background: #0a0a0a;
 	padding: 60px 0;
 
 	@include media ($medium-screen-up) {
@@ -78,13 +102,32 @@
 			}
 		}
 
-		p, ul, li, a {
+		h2, h3, h4, h5 {
+			color: white;
+		}
+
+		p, a {
 			color: white;
 			text-align: center;
 			margin-bottom: 15px;
 
 			&:last-of-type {
 				margin-bottom: 0;
+			}
+		}
+
+		ul {
+			margin-left: 0;
+
+			li {
+				color: white;
+				padding-left: 15px;
+
+				&:before {
+					content: "- ";
+					position: absolute;
+					margin-left: -10px;	
+				}
 			}
 		}
 	}
@@ -99,7 +142,7 @@
 				-moz-columns: 2;
 			}
 
-			p, ul, li, a {
+			p, a {
 				margin-bottom: 15px;
 				text-align: left;
 			}
@@ -107,7 +150,12 @@
 	}
 }
 
+/*=============================
+=            LOGIN            =
+=============================*/
+
 .login {
+
 	#main {
 		background: #f9f9f9;
 
@@ -166,12 +214,11 @@
 	}
 }
 
+/*========================================
+=            SERVICES & PACKS            =
+========================================*/
 
-/*================================
-=            SERVICES            =
-================================*/
-
-#services {
+#services, #packs {
 	text-align: center;
 	background: white;
 	padding: 60px 0;
@@ -181,7 +228,7 @@
 	}
 
 	h1 {
-		margin: 0 0 40px 0;
+		margin: 0 0 60px 0;
 		text-align: center;
 		font-size: 25px;
 
@@ -205,13 +252,13 @@
 			box-sizing: border-box;
 
 			@include media ($medium-screen-up) {
-				width: 33.333%;
-				float: left;
+				//width: 33.333%;
+				//float: left;
 			}
 
 			@include media ($large-screen-up) {
-				margin-bottom: 0;
-				width: 16.666%;
+				//margin-bottom: 0;
+				//width: 16.666%;
 			}
 			
 			.icon {
@@ -233,9 +280,9 @@
 
 			h3 {
 				font-size: 14px;
-				margin: 0 0 20px 0;
 				text-transform: uppercase;
 				min-height: 56px;
+				margin: 0;
 
 				@include media ($medium-screen-up) { 
 					font-size: 16px;
@@ -251,6 +298,7 @@
 				text-transform: uppercase;
 				outline: 0;
 				transition: all 300ms;
+				margin-top: auto20px;
 
 				@include media ($medium-screen-up) {
 					padding: 6px 40px;
@@ -264,6 +312,15 @@
 		}
 	}
 }
+
+/*=============================
+=            PACKS            =
+=============================*/
+
+#packs {
+	background: #f9f9f9;
+}
+
 
 /*=====================================
 =            CONTACTUS BOX            =
@@ -332,14 +389,21 @@
 
 #cta {
 	text-align: center;
-	padding: 60px 0;
-
-	@include media ($medium-screen-up) {
-		padding: 100px 0;
-	}
-
 	min-height: 400px;
 	background: transparent;
+	position: relative;
+
+	.overlay {
+		padding: 60px 0;
+		height: 100%;
+		position: absolute;
+		width: 100%;
+		background: rgba(0,0,0,0.3);
+
+		@include media ($medium-screen-up) {
+			padding: 100px 0;
+		}
+	}
 
 	h1 {
 		margin: 0 0 40px 0;
@@ -359,7 +423,30 @@
 	p, a {
 		color: white;
 	}
+
+	a {
+		display: inline-block;
+		border: 1px solid white;
+		padding: 10px 15px;
+		font-weight: 600;
+		text-transform: uppercase;
+	}
 }
+
+/*================================
+=            PARALLAX            =
+================================*/
+
+.parallax-mirror {
+	img {
+		-webkit-x: grayscale(100%);
+		-moz-filter: grayscale(100%);
+		-o-filter: grayscale(100%);
+		-ms-filter: grayscale(100%);
+		filter: grayscale(100%);
+	}
+}
+
 
 /*===============================
 =            Conatct            =
@@ -371,7 +458,13 @@
 
 		.entry-content, .entry-header {
 
-			p {
+			h1, h2, h3 {
+			}
+
+			label {
+			}
+
+			p, a {
 				text-align: left;
 			}
 		}

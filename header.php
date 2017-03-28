@@ -32,9 +32,7 @@
 	<header id="masthead" class="site-header" role="banner">
 		<div class="container">
 		
-			<div class="site-branding">
-				<img src="<?php echo get_template_directory_uri(); ?>/assets/logo.svg" alt="">
-			</div>
+			<div class="site-branding"><!-- CHECK CSS --></div>
 
 			<nav id="site-navigation" class="main-navigation" role="navigation">
 				<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
