@@ -59,6 +59,7 @@ get_header(); ?>
 
 		</main>
 
+		<?php if( have_rows('Serviceses') ): ?>
 		<section id="services">
 			<div class="container">
 
@@ -66,25 +67,29 @@ get_header(); ?>
 
 				<div class="list-of-services">
 
-					<?php 
-					$params = array( 
-						'post_type' => 'services', 
-						'posts_per_page' => -1,
-					);
-
-					$loop = new WP_Query($params);  ?>
-
-					<?php while ( $loop->have_posts() ) : $loop->the_post(); ?>
+					<?php while ( have_rows('Serviceses') ) : the_row(); ?>
 					<div class="service span3">
-						<div class="icon" style="background-image:url(<?php the_field( 'service_icon' ); ?>);"></div>
-						<h3><?php the_title( ); ?></h3>
+						<?php $icon = get_sub_field( 'Icon' ); ?>
+						<div class="icon" style="background-image:url(<?php echo $icon['url']; ?>);"></div>
+						<h3><?php the_sub_field( 'Name' ); ?></h3>
 					</div>
-					<?php endwhile; wp_reset_query(); ?>
+					<?php endwhile; ?>
 
 				</div>
 
 			</div>
+
+			<div class="container">
+
+				<h1>ADDONS</h1>
+
+				<div class="addons">
+					<?php the_field( 'Addonses' ); ?>
+				</div>
+
+			</div>
 		</section>
+		<?php endif; ?>
 
 		<section id="packs">
 			<div class="container">

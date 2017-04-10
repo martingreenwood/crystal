@@ -13,6 +13,9 @@
 
 	<header class="entry-header">
 		<h1><?php the_title(); ?></h1>
+		<?php if (get_field( 'subtitle' )): ?>
+			<p><?php the_field( 'subtitle' ); ?></p>
+		<?php endif; ?>
 	</header>
 
 	<div class="entry-content">

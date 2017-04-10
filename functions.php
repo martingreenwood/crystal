@@ -104,7 +104,8 @@ function crystal_scripts() {
 	wp_enqueue_style( 'crystal-style', get_stylesheet_uri() );
 	wp_enqueue_style( 'crystal-font', '//fonts.googleapis.com/css?family=Montserrat' );
 
-	wp_enqueue_script( 'jquery');
+	wp_enqueue_script( 'jquery' );
+	wp_enqueue_script( 'crystal-fa', 'https://use.fontawesome.com/8b8e037e73.js', array(), '', true );
 	wp_enqueue_script( 'crystal-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '', true );
 	wp_enqueue_script( 'crystal-modernizr', get_template_directory_uri() . '/js/modernizr.js', array(), '', true );
 	wp_enqueue_script( 'crystal-parallax', get_template_directory_uri() . '/js/parallax.min.js', array(), '', true );

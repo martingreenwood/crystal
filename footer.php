@@ -25,6 +25,15 @@
 					<li>E: <?php echo antispambot( "hello@fineclean.co.uk"); ?></li>
 					<li>A: St. Johns, Worcester</li>
 				</ul>
+				<div class="social">
+					<ul>
+						<li><a href="https://www.facebook.com/finecleann/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+</a></li>
+						<li><a href="https://www.instagram.com/finecleann/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+</a></li>
+						<li><a href="https://www.twitter.com/finecleann/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+</a></li>
+				</div>
 			</div>
 			<div class="copyright">
 				<p class="aligncenter">Copyright <?php echo bloginfo( 'name' ); ?> <?php echo date('Y'); ?>. <a rel="credit" target="_blank" href="http://wearebeard.com">Website by WEAREBEARD</a>.</p>

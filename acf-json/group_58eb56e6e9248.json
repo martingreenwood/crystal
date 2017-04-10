@@ -1,12 +1,12 @@
 {
-    "key": "group_58bd3e3d0252c",
-    "title": "Contact Form",
+    "key": "group_58eb56e6e9248",
+    "title": "Sub Title",
     "fields": [
         {
-            "key": "field_58bd3e45cca02",
-            "label": "Form Selector",
-            "name": "form_selector",
-            "type": "gravity_forms_field",
+            "key": "field_58eb56e952a3a",
+            "label": "",
+            "name": "subtitle",
+            "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
@@ -15,26 +15,29 @@
                 "class": "",
                 "id": ""
             },
-            "allow_null": 0,
-            "allow_multiple": 0
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
         }
     ],
     "location": [
         [
             {
-                "param": "page",
+                "param": "post_template",
                 "operator": "==",
-                "value": "40"
+                "value": "template-service-page.php"
             }
         ]
     ],
     "menu_order": 0,
-    "position": "side",
+    "position": "acf_after_title",
     "style": "default",
     "label_placement": "top",
     "instruction_placement": "label",
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1491820571
+    "modified": 1491820575
 }

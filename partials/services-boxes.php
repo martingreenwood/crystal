@@ -2,7 +2,7 @@
 		<section id="services">
 			<div class="container">
 
-				<h1>THE SERVICES PACKAGES WE PROVIDE</h1>
+				<h1>THE SERVICE PACKAGES WE PROVIDE</h1>
 
 				<div class="list-of-services">
 				<?php 

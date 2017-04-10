@@ -73,6 +73,16 @@ get_header(); ?>
 
 					<?php the_field( 'cta_content' ); ?>
 
+					<div class="social">
+						<ul>
+							<li><a href="https://www.facebook.com/finecleann/" target="_blank"><i class="fa fa-facebook" aria-hidden="true"></i>
+						</a></li>
+							<li><a href="https://www.instagram.com/finecleann/" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+						</a></li>
+							<li><a href="https://www.twitter.com/finecleann/" target="_blank"><i class="fa fa-twitter" aria-hidden="true"></i>
+						</a></li>
+					</div>
+
 				</div>
 			</div>
 		</section>

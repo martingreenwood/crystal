@@ -7,7 +7,7 @@
 		"uuidString": "F4DEF912-9BC1-4EC5-BF39-356FC770FA1D"
 		}
 	],
-"creatorBuild": "25704",
+"creatorBuild": "25813",
 "files": {
 	"\/.gitignore": {
 		"ft": 8192,
@@ -81,6 +81,22 @@
 		"oO": 0,
 		"oS": 1
 		},
+	"\/acf-json\/group_58eb56e6e9248.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_58eb56e6e9248-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
+	"\/acf-json\/group_58eb5c695fe19.json": {
+		"ft": 524288,
+		"oA": 1,
+		"oAP": "\/acf-json\/group_58eb5c695fe19-min.json",
+		"oF": 0,
+		"oO": 0,
+		"oS": 1
+		},
 	"\/archive.php": {
 		"ft": 8192,
 		"oA": 2,
@@ -93,6 +109,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/logo-w.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -112,6 +129,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/logo-w@2x.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -121,6 +139,7 @@
 		"oA": 0,
 		"oAP": "\/assets\/logo.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
 		"q": 100
 		},
@@ -140,7 +159,29 @@
 		"oA": 0,
 		"oAP": "\/assets\/logo@2x.jpg",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"q": 100
+		},
+	"\/assets\/rotate.svg": {
+		"ft": 2097152,
+		"miP": 0,
+		"oA": 2,
+		"oAP": "\/assets\/rotate.svg",
+		"oF": 0,
+		"opt": 0,
+		"plM": 3758088159,
+		"prP": 0
+		},
+	"\/assets\/rotate@2x.png": {
+		"ft": 32768,
+		"iS": 1673,
+		"oA": 0,
+		"oAP": "\/assets\/rotate@2x.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/comments.php": {
@@ -2936,11 +2977,12 @@
 	"\/screenshot.png": {
 		"ft": 32768,
 		"iS": 264,
-		"l": 1,
 		"oA": 0,
 		"oAP": "\/screenshot.png",
 		"oF": 0,
+		"oIPL": 0,
 		"opt": 0,
+		"oT": 1,
 		"q": 100
 		},
 	"\/search.php": {
@@ -3994,6 +4036,10 @@
 			"active": 0,
 			"optionString": ""
 			},
+		"no-prototype-builtins": {
+			"active": 0,
+			"optionString": ""
+			},
 		"no-redeclare": {
 			"active": 1,
 			"optionString": "{'builtinGlobals': false}"
@@ -4818,14 +4864,6 @@
 		"orderOutput": 0,
 		"outputStyle": 1
 		},
-	"languageDefaultsJSX": {
-		"autoOutputAction": 0,
-		"autoOutputPathFilenamePattern": "*.js",
-		"autoOutputPathRelativePath": "",
-		"autoOutputPathReplace1": "jsx",
-		"autoOutputPathReplace2": "js",
-		"autoOutputPathStyle": 0
-		},
 	"languageDefaultsKIT": {
 		"autoOutputAction": 0,
 		"autoOutputPathFilenamePattern": "*.html",
@@ -4888,7 +4926,7 @@
 		"autoOutputPathReplace1": "",
 		"autoOutputPathReplace2": "",
 		"autoOutputPathStyle": 0,
-		"enableLossy": 1,
+		"optimizerType": 1,
 		"quality": 100
 		},
 	"languageDefaultsPUG": {

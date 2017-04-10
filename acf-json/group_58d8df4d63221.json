@@ -20,25 +20,6 @@
             "ui": 1,
             "ui_on_text": "",
             "ui_off_text": ""
-        },
-        {
-            "key": "field_58d8eda31d716",
-            "label": "",
-            "name": "Show_Services",
-            "type": "true_false",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "message": "Enable Service Icons?",
-            "default_value": 0,
-            "ui": 1,
-            "ui_on_text": "",
-            "ui_off_text": ""
         }
     ],
     "location": [
@@ -65,5 +46,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1490611793
+    "modified": 1491820578
 }

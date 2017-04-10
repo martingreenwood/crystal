@@ -67,16 +67,16 @@ get_header(); ?>
 
 		</main>
 
-		<?php 
-			get_template_part( 'partials/services', 'boxes' );
-		?>
-
 		<section id="contactus">
 			<div class="container">
 				<h3>CONTACT US NOW TO ARRANGE A FREE SITE VISIT</h3>
 				<a href="<?php echo home_url( 'contact' ); ?>">Get in Touch</a>
 			</div>
 		</section>
+
+		<?php 
+			get_template_part( 'partials/services', 'boxes' );
+		?>
 
 		<?php if (get_field( 'enable_cta' )): ?>
 
